@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+progress {
+  width: 75vw;
+  appearance: none;
+}
+
+#bar {
+  height: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+#bar::-webkit-progress-value {
+  height: 2rem;
+  background-color: teal;
+  border-radius: 1rem;
+}
+
+#bar::-moz-progress-bar {
+  height: 2rem;
+  background-color: teal;
+  border-radius: 1rem;
+}
+
+#bar::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  progress {
+    width: 50vw;
+  }
+}
